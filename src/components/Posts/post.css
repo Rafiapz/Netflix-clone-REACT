@@ -1,0 +1,103 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+@layer components{
+
+    .postsMaindiv{
+        margin-left: 20px;
+        color: #fff;
+        
+    }
+    .posters{
+        display: flex;
+        padding-left: 15px;
+        overflow-x: scroll;
+        overflow-y: hidden;
+        padding-top: 10px;
+        gap: 10px;
+        padding-bottom: 10px;
+
+
+        
+    }
+    .posters::-webkit-scrollbar{
+        display: none;
+        
+    }
+    .originalsPoster{
+        background-size: contain;
+        background-repeat: no-repeat;
+        min-width:380px;
+        min-height: 215px;
+        border-radius: 8px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-end;
+    }
+    .otherPoster{
+        background-size: contain;
+    background-repeat: no-repeat;
+    min-width: 165px;
+    min-height: 220px;
+    border-radius: 8px;
+    }
+    .originalsPoster:hover{
+        transform: scale(1.2);
+        transition: 500ms ease-in-out;
+        z-index: 5;
+        border-radius: 13px;
+    }
+    .otherPoster:hover{
+        transform: scale(1.2);
+        transition: 500ms ease-in-out;
+    }
+
+    .Title{
+        color: white;
+        font-size: 1.3rem;
+        font-weight: 700;
+        margin-left: 10px;
+       
+    }
+    
+    .trailer{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        margin-top: 20px;
+    }
+    .closeButton{
+        color: white;
+        font-size: xx-large;
+    }
+    .card-content{
+        width: 100%;
+        margin: 0 0 0 0;
+        color: white;
+    }
+    .card-content p{
+        word-wrap: break-word;
+        white-space: normal;
+        font-size: 10px;
+        opacity: 40%;
+        padding: 0 20px;
+    }
+    .card-content h1{
+        font-weight: 400;
+        font-size: 16px;
+        margin: 0 0 6px 0;
+        padding: 0 20px;
+        
+    }
+    .card-content div{
+        width: 100%;
+        background-image: linear-gradient(180deg,rgba(0, 0, 0, 0),rgba(0, 0, 0, 0.32),rgb(0, 0, 0));
+        backdrop-filter: blur(1px);
+        padding-top: 10px;
+        padding-bottom: 10px;
+        border-radius: 8px;
+    }
+}
